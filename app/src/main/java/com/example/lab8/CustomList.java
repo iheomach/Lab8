@@ -50,7 +50,18 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void addCity(City city){
+        cities.add(city);
 
+    }
+    public boolean hascity(City city) {
+        boolean bool;
+        if (cities.contains(city)){
+            bool = true;
+        }
+        else {
+            bool = false;
+        }
+        return bool;
     }
 
 }
