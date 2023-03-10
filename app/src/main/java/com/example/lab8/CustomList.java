@@ -51,7 +51,6 @@ public class CustomList extends ArrayAdapter<City> {
 
     public void addCity(City city){
         cities.add(city);
-
     }
     public boolean hascity(City city) {
         boolean bool;
@@ -62,6 +61,10 @@ public class CustomList extends ArrayAdapter<City> {
             bool = false;
         }
         return bool;
+    }
+
+    public void deleteCity(City city){
+
     }
 
 }
